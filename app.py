@@ -4,6 +4,11 @@ from nutrition import *
 from flask import jsonify
 app = Flask(__name__)
 api = Api(app)
+
+@app.route("/", methods=['GET'])
+def hello():
+    return "hey"
+
 class nutrition(Resource):
 	def get(self,age,gen,pref):
 		js = start(age,gen,pref)
