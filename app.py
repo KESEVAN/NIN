@@ -5,10 +5,10 @@ from flask import jsonify
 app = Flask(__name__)
 api = Api(app)
 
-@app.route("/<int:age>/<string:gen>/<string:pref>", methods=['GET'])
-def nutrition(self,age,gen,pref):
-    js = start(age,gen,pref)
-    return js
+@app.route("/", methods=['GET'])
+def nutrition():
+#     js = start(age,gen,pref)
+    return "Hello"
 
 # class nutrition(Resource):
 # 	def get(self,age,gen,pref):
