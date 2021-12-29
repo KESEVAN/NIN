@@ -43,7 +43,7 @@ def women(age):
         op = df_women.iloc[1:2,1:]
     elif int(age) in range(19,24):
         op = df_women.iloc[2:3,1:]
-    elif int(age) in range(25,50):
+    elif int(age) in range(25,51):
         op = df_women.iloc[3:4,1:]
     elif int(age) > 51:
         op = df_women.iloc[4:5,1:]
@@ -56,7 +56,7 @@ def men(age):
         op = df_men.iloc[1:2,1:]
     elif int(age) in range(19,24):
         op = df_men.iloc[2:3,1:]
-    elif int(age) in range(25,50):
+    elif int(age) in range(25,51):
         op = df_men.iloc[3:4,1:]
     elif int(age) > 51:
         op = df_men.iloc[4:5,1:]
