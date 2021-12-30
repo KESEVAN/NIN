@@ -8,10 +8,12 @@ api = Api(app)
 @app.route("/<int:age>/<string:gen>/<string:pref>", methods=['GET'])
 def nutrition(age,gen,pref):
     js = start(age,gen,pref)
-    result=[]
-    for i in js:
-    	result.append(i)
-    return jsonify(result)
+#     result=[]
+#     for i in js:
+#     	result.append(i)
+#     return jsonify(result)
+    output=[{js.index(i):i}for i in js]
+    return output
 
 
 if __name__ == '__main__':
