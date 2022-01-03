@@ -12,7 +12,7 @@ def nutrition(age,gen,pref):
 #     for i in js:
 #     	result.append(i)
 #     return jsonify(result)
-    output=[{js.index(i):i}for i in js]
+    output=[{"preidction":i}for i in js]
     return jsonify(output)
 
 
